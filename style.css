@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+}
+
+#gamePage {
+  display: none;
+}
+
+#homePage {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+#gameMessage {
+  margin: 5px;
+}
+
+#gameBoard {
+  background-color: #eff407;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#random {
+  margin-top: 30px;
+}
+
+.gamecol {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.jumbotron {
+  background-color: #5e9efd;
+}
+.gamecol.empty {
+  cursor: pointer;
+}
+
+.dark > .gamerow > .empty {
+  background-color: #777;
+}
+
+.next-turn {
+  background-color: black;
+  opacity: 0.1;
+}
+
+.gamecol.P1 {
+  background-color: #f4074e;
+}
+
+.gamecol.P2 {
+  background-color: #4f6cc4;
+}
+
+.dark > .gamerow > .P1 {
+  background-color: #fff;
+}
+
+.dark > .gamerow > .P2 {
+  background-color: #000;
+}
+.dark > .gamerow > .next-turn {
+  background-color: #07f434;
+  opacity: 0.3;
+}
+
+.other > .gamerow > .P1 {
+  background-color: #71c7ec;
+}
+
+.other > .gamerow > .P2 {
+  background-color: #005073;
+}
+.section {
+  border: black;
+  border-width: 2px;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  width: 75%;
+  font-size: 4vh;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 75%;
+  font-size: 2vh;
+  margin-top: 10px;
+}
+h4 {
+  font-weight: normal;
+}
+
+#gameMessage {
+  font-size: 2vh;
+}
+
+#turnMessage {
+  font-size: 2vh;
+}

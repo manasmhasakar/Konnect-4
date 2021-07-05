@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/style.css" rel="stylesheet" type ="text/css"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Konnect4</title>
+  </head>
+  <body>
+    <div id="homePage">
+      <div class="jumbotron">
+        <h1>Konnect 4</h1>
+        <h3 id="greet">Welcome to Connect 4, head on in!</h3>
+        <form id ="nameForm">
+          <input type="text" id="who">
+          <input type="submit" value = "Set username"/>
+        </form>
+        <p id="nameFeedback"> </p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-20">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Join Your Friend</h3>
+              <p>
+                <form id="joinForm">
+                  <label>Private Room ID:</label>
+                  <br>
+                  <input type="text" id="privRoom">
+                  <input type="submit" value = "Join Room"/>
+                </form>
+              </p>
+              <p id="roomFeedback"> </p>
+              <p>
+                <form id="privateForm">
+                  <label>Or Create A Room For Friend to Join</label>
+                  <p>Once you've made a room, you will be given a room code,
+                    tell your friend to visit the site and enter using that code
+                    to join you.<br><strong>Note: Leaving the room before starting 
+                      will cause you to need a new room code.</strong></p>
+                  <input type="submit" value = "Create Private Game"/>
+                </form>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="gamePage">
+      <div id="gameMessage"></div>
+      <div id="turnMessage"></div> 
+      <div id="gameBoard">      
+      </div>
+      
+    </div>
+  </body>
+</html>
